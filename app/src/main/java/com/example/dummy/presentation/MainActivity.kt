@@ -67,7 +67,8 @@ fun Loggin() {
             Arrangement.Center,
             Alignment.CenterHorizontally
         ) {
-            Box( modifier = Modifier.padding(30.dp),
+            Box(
+                modifier = Modifier.padding(30.dp),
                 contentAlignment = Alignment.Center
             ) {
 
@@ -79,9 +80,12 @@ fun Loggin() {
                 contentAlignment = Alignment.Center
             ) {
 
-                TextField(value = password.value, onValueChange = {
-                    password.value = it
-                }, )
+                TextField(
+                    value = password.value,
+                    onValueChange = {
+                        password.value = it
+                    },
+                )
             }
         }
         Box(
